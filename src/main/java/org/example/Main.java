@@ -46,7 +46,6 @@ public class Main {
        sortedList = employeeList.stream().sorted((e1, e2) -> (int) (e2.getSalary() - e1.getSalary())).skip(3).collect(Collectors.toList());
         for (Employee e : sortedList) {
             System.out.print(e.getId() + " ");
-
         }
     }
 }
